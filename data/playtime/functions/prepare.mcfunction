@@ -14,13 +14,13 @@ scoreboard objectives add custom.total_world_time minecraft.custom:minecraft.tot
 # individual settings
 ## seconds
 scoreboard objectives add t_playtime_s dummy
-scoreboard objectives add playtime_s dummy
+scoreboard objectives add playtime_s dummy "Playtime (seconds)"
 ## minutes
 scoreboard objectives add t_playtime_m dummy
-scoreboard objectives add playtime_m dummy
+scoreboard objectives add playtime_m dummy "Playtime (minutes)"
 ## hours
 scoreboard objectives add t_playtime_h dummy
-scoreboard objectives add playtime_h dummy
+scoreboard objectives add playtime_h dummy "Playtime (hours)"
 ## days
 scoreboard objectives add t_playtime_d dummy
-scoreboard objectives add playtime_d dummy
+scoreboard objectives add playtime_d dummy "Playtime (days)"
