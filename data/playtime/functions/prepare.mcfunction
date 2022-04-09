@@ -1,8 +1,7 @@
 # PLAYTIME /reload
 
 
-# create scoreboards
-scoreboard objectives add playtime_temp dummy
+# create scoreboard
 ## uses same variable name as "Stats Tracker" (compatiable)
 scoreboard objectives add custom.total_world_time minecraft.custom:minecraft.total_world_time
 
