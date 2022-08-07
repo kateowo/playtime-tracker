@@ -2,6 +2,7 @@
 
 
 scoreboard players enable @a playtime_display
+execute as @a unless score @s defaults matches 1.. run function playtime:defaults
 
 # store in temp
 execute as @a run scoreboard players operation @s t_playtime_s = @s custom.total_world_time

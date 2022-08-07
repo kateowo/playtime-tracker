@@ -2,6 +2,7 @@
 
 
 # internal stuff
+scoreboard objectives add defaults dummy
 scoreboard objectives add internal dummy
 scoreboard players set 60 internal 60
 scoreboard players set 24 internal 24
