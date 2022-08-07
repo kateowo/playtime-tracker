@@ -64,6 +64,20 @@ execute as @a run scoreboard players operation @s v_playtime_d_total /= 24 inter
 execute as @a run scoreboard players operation @s v_playtime_d_total /= 60 internal
 execute as @a run scoreboard players operation @s v_playtime_d_total /= 60 internal
 
+# append 0 (if eligible)
+## seconds
+scoreboard players reset @s t_playtime_s_0
+execute if score @s v_playtime_s_total < 10 internal run scoreboard players set @s t_playtime_s_0 0
+## minutes
+scoreboard players reset @s t_playtime_m_0
+execute if score @s v_playtime_m_total < 10 internal run scoreboard players set @s t_playtime_m_0 0
+## hours
+scoreboard players reset @s t_playtime_h_0
+execute if score @s v_playtime_h_total < 10 internal run scoreboard players set @s t_playtime_h_0 0
+## days
+scoreboard players reset @s t_playtime_d_0
+execute if score @s v_playtime_d_total < 10 internal run scoreboard players set @s t_playtime_d_0 0
+
 # toggle actionbar
 ## /trigger playtime_display
-execute as @a if score @s playtime_display matches 1.. run title @s actionbar ["",{"text":"[","color":"dark_gray"},{"text":"⌚","color":"gold"},{"text":"] ","color":"dark_gray"},{"score":{"name":"@s","objective":"v_playtime_d_total"}},":",{"score":{"name":"@s","objective":"v_playtime_h_total"}},":",{"score":{"name":"@s","objective":"v_playtime_m_total"}},":",{"score":{"name":"@s","objective":"v_playtime_s_total"}}]
+execute as @a if score @s playtime_display matches 1.. run title @s actionbar ["",{"text":"[","color":"dark_gray"},{"text":"⌚","color":"gold"},{"text":"] ","color":"dark_gray"},{"score":{"name":"@s","objective":"t_playtime_d_0"}},{"score":{"name":"@s","objective":"v_playtime_d_total"}},":",{"score":{"name":"@s","objective":"t_playtime_h_0"}},{"score":{"name":"@s","objective":"v_playtime_h_total"}},":",{"score":{"name":"@s","objective":"t_playtime_m_0"}},{"score":{"name":"@s","objective":"v_playtime_m_total"}},":",{"score":{"name":"@s","objective":"t_playtime_s_0"}},{"score":{"name":"@s","objective":"v_playtime_s_total"}}]
