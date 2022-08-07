@@ -1,6 +1,8 @@
 # PLAYTIME main loop
 
 
+scoreboard players enable @a playtime_display
+
 # store in temp
 execute as @a run scoreboard players operation @s t_playtime_s = @s custom.total_world_time
 execute as @a run scoreboard players operation @s t_playtime_m = @s custom.total_world_time
