@@ -15,12 +15,24 @@ scoreboard objectives add custom.total_world_time minecraft.custom:minecraft.tot
 ## seconds
 scoreboard objectives add t_playtime_s dummy
 scoreboard objectives add playtime_s dummy "Playtime (seconds)"
+scoreboard objectives add t_playtime_s_total dummy
+scoreboard objectives add v_playtime_s_total dummy
 ## minutes
 scoreboard objectives add t_playtime_m dummy
 scoreboard objectives add playtime_m dummy "Playtime (minutes)"
+scoreboard objectives add t_playtime_m_total dummy
+scoreboard objectives add v_playtime_m_total dummy
 ## hours
 scoreboard objectives add t_playtime_h dummy
 scoreboard objectives add playtime_h dummy "Playtime (hours)"
+scoreboard objectives add t_playtime_h_total dummy
+scoreboard objectives add v_playtime_h_total dummy
 ## days
 scoreboard objectives add t_playtime_d dummy
 scoreboard objectives add playtime_d dummy "Playtime (days)"
+scoreboard objectives add t_playtime_d_total dummy
+scoreboard objectives add v_playtime_d_total dummy
+
+# toggle actionbar
+## /trigger playtime_display
+scoreboard objectives add playtime_display trigger
