@@ -3,7 +3,7 @@
 
 
 # toggle
-execute as @a if score @s playtime_display matches 1.. run function playtime:event/switch
+execute as @a at @s if score @s playtime_display matches 1.. run function playtime:event/switch
 scoreboard players enable @a playtime_display
 
 # calc
