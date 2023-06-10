@@ -41,4 +41,6 @@ scoreboard objectives add t_playtime_d_0 dummy
 
 # toggle actionbar
 ## /trigger playtime_display
-scoreboard objectives add playtime_display trigger
+scoreboard objectives add playtime_display trigger "Toggle playtime visibility"
+## playtime displayed?
+scoreboard objectives add kate_store.playtime dummy
